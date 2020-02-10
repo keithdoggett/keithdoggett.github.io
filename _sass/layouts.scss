@@ -1,0 +1,47 @@
+#nav {
+  margin: 0;
+  padding: 30px;
+  background-color: rgba($secondary, 0.4);
+  a {
+    font-weight: bold;
+    color: $link;
+    padding-right: 5px;
+
+    &.current {
+      color: lighten($primary, 5%);
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-logo {
+    padding-left: 20px;
+    display: inline-flex;
+  }
+
+  .navbar-links {
+    padding-right: 20px;
+  }
+}
+
+#home {
+  padding-top: 20px;
+
+  .title-card {
+    padding: 10px;
+    background-color: $tertiary;
+    outline: $primary solid 2px;
+    text-align: center;
+
+    p {
+      text-align: justify;
+    }
+
+    @media screen and (min-width: $screen-md) {
+      margin: 0 15%;
+    }
+  }
+}

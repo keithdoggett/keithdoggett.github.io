@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    {% include navigation.html %}
+    <div id="home">
+      <!-- Title Card -->
+      <div class="title-card">
+        <h4>Keith Doggett</h4>
+        <h5>Software Engineer | Geospatial & Analytics</h5>
+        <p>
+          Hi! I'm a software engineer with experience in geospatial computing,
+          data analytics/visualization, and web scraping. I currently work at
+          <a href="https://www.goldfishads.com" target="_blank">Goldfish Ads</a>
+          where I build tools for the planning and reporting of OOH campaigns
+          with insights based on non-personal, geographic data. Was a co-founder
+          of GeoSwap which was acquired by Goldfish in 2019.
+        </p>
+        <p>
+          My other technical interests include communications systems and sports
+          data. I can be found running on the Schuylkill River Trail.
+        </p>
+      </div>
+    </div>
+    {{content}}
+  </body>
+</html>
