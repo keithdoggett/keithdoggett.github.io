@@ -29,19 +29,86 @@
 
 #home {
   padding-top: 20px;
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
 
-  .title-card {
+  .intro-card {
+    width: 50%;
     padding: 10px;
     background-color: $tertiary;
     outline: $primary solid 2px;
     text-align: center;
 
     p {
-      text-align: justify;
+      text-align: left;
     }
 
     @media screen and (min-width: $screen-md) {
-      margin: 0 15%;
+      outline: $primary solid 3px;
+    }
+  }
+
+  .intro-image-container {
+    width: 45%;
+    overflow: hidden;
+
+    img {
+      border-radius: 3px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .posts {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .posts-title {
+    h3 {
+      // color: $secondary;
+    }
+  }
+
+  .post-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: $screen-sm) {
+      display: block;
+    }
+  }
+
+  .post-card {
+    // width: 30%;
+    margin: 5%;
+    padding: 10px;
+    background-color: $tertiary;
+    outline: $primary solid 2px;
+    text-align: center;
+
+    h4,
+    h5 {
+      color: $stroke;
+    }
+
+    p {
+      text-align: left;
+      color: $stroke;
+    }
+
+    &:hover {
+      background-color: rgba($secondary, 0.4);
+    }
+
+    @media screen and (min-width: $screen-md) {
+      outline: $primary solid 3px;
     }
   }
 }

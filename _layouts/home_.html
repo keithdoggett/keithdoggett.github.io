@@ -8,24 +8,56 @@
   <body>
     {% include navigation.html %}
     <div id="home">
-      <!-- Title Card -->
-      <div class="title-card">
-        <h4>Keith Doggett</h4>
-        <h5>Software Engineer | Geospatial & Analytics</h5>
-        <p>
-          Hi! I'm a software engineer with experience in geospatial computing,
-          data analytics/visualization, and web scraping. I currently work at
-          <a href="https://www.goldfishads.com" target="_blank">Goldfish Ads</a>
-          where I build tools for the planning and reporting of OOH campaigns
-          with insights based on non-personal, geographic data. Was a co-founder
-          of GeoSwap which was acquired by Goldfish in 2019.
-        </p>
-        <p>
-          My other technical interests include communications systems and sports
-          data. I can be found running on the Schuylkill River Trail.
-        </p>
+      <!-- Intro Section -->
+      <div class="intro">
+        <div class="intro-card">
+          <h4>Keith Doggett</h4>
+          <h5>Software Engineer | Geospatial & Analytics</h5>
+          <p>
+            Hi! I'm a software engineer with experience in geospatial computing,
+            data analytics/visualization, and web scraping. I currently work at
+            <a href="https://www.goldfishads.com" target="_blank"
+              >Goldfish Ads</a
+            >
+            where I build tools for the planning and reporting of OOH campaigns
+            with insights based on non-personal, geographic data. Was a
+            co-founder of GeoSwap which was acquired by Goldfish in 2019.
+          </p>
+          <p>
+            My other technical interests include communications systems and
+            sports data. I can be found running on the Schuylkill River Trail.
+          </p>
+        </div>
+        <!-- <div class="intro-image-container">
+          <img
+            class="intro-image"
+            src="/assets/images/walking_in_philly_cropped.png"
+            alt="walking in philly"
+          />
+        </div> -->
+      </div>
+
+      <div class="posts">
+        <div class="posts-title">
+          <hr />
+          <h3>Recent Posts</h3>
+        </div>
+        <div class="post-gallery">
+          {% for post in site.posts limit:3 %}
+          <a href="{{post.url}}"
+            ><div class="post-card">
+              <h5>{{post.title}}</h5>
+              <p>{{post.excerpt}}</p>
+              <caption>
+                {{post.date | date_to_string}}
+              </caption>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
       </div>
     </div>
+
     {{content}}
   </body>
 </html>
