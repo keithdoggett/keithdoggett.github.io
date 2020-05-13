@@ -28,15 +28,9 @@
             sports data. I can be found running on the Schuylkill River Trail.
           </p>
         </div>
-        <!-- <div class="intro-image-container">
-          <img
-            class="intro-image"
-            src="/assets/images/walking_in_philly_cropped.png"
-            alt="walking in philly"
-          />
-        </div> -->
       </div>
 
+      <!-- Posts -->
       <div class="posts">
         <div class="posts-title">
           <hr />
@@ -46,6 +40,69 @@
           {% for post in site.posts limit:3 %}
           <a href="{{post.url}}"
             ><div class="post-card">
+              <h5>{{post.title}}</h5>
+              <p>{{post.excerpt}}</p>
+              <caption>
+                {{post.date | date_to_string}}
+              </caption>
+            </div>
+          </a>
+          <a href="{{post.url}}"
+            ><div class="post-card">
+              <h5>{{post.title}}</h5>
+              <p>{{post.excerpt}}</p>
+              <caption>
+                {{post.date | date_to_string}}
+              </caption>
+            </div>
+          </a>
+          <a href="{{post.url}}"
+            ><div class="post-card">
+              <h5>{{post.title}}</h5>
+              <p>{{post.excerpt}}</p>
+              <caption>
+                {{post.date | date_to_string}}
+              </caption>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="projects">
+        <div class="projects-title">
+          <hr />
+          <h3>Projects</h3>
+        </div>
+        <div class="project-gallery">
+          {% for post in site.posts limit:3 %}
+          <a href="{{post.url}}"
+            ><div class="project-card">
+              <h5>{{post.title}}</h5>
+              <p>{{post.excerpt}}</p>
+              <caption>
+                {{post.date | date_to_string}}
+              </caption>
+            </div>
+          </a>
+          <a href="{{post.url}}"
+            ><div class="project-card">
+              <h5>{{post.title}}</h5>
+              <div class="project-card-body">
+                <img
+                  height="400"
+                  src="{{site.baseurl}}/assets/images/{{post.img}}"
+                />
+                <p>{{post.excerpt}}</p>
+              </div>
+              <caption>
+                {{post.date | date_to_string}}
+              </caption>
+            </div>
+          </a>
+          <a href="{{post.url}}"
+            ><div class="project-card">
               <h5>{{post.title}}</h5>
               <p>{{post.excerpt}}</p>
               <caption>
