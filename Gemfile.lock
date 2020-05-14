@@ -206,9 +206,15 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.14.0)
     multipart-post (2.1.1)
+<<<<<<< HEAD
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.7-x86-mingw32)
+=======
+    nokogiri (1.10.8)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.8-x86-mingw32)
+>>>>>>> 2377c34d4f35a1f8a7596e2d30783a09831031e9
       mini_portile2 (~> 2.4.0)
     octokit (4.16.0)
       faraday (>= 0.9)
