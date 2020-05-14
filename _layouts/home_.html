@@ -7,7 +7,7 @@
   </head>
   <body>
     {% include navigation.html %}
-    <div id="home">
+    <div id="home" class="content">
       <!-- Intro Section -->
       <div class="intro">
         <div class="intro-card">
@@ -19,9 +19,9 @@
             <a href="https://www.goldfishads.com" target="_blank"
               >Goldfish Ads</a
             >
-            where I build tools for the planning and reporting of OOH campaigns
-            with insights based on non-personal, geographic data. Was a
-            co-founder of GeoSwap which was acquired by Goldfish in 2019.
+            where I build tools for BI and the planning and reporting of media
+            campaigns with insights based on non-personal, geographic data. Was
+            a co-founder of GeoSwap which was acquired by Goldfish in 2019.
           </p>
           <p>
             My other technical interests include communications systems and
@@ -37,25 +37,7 @@
           <h3>Recent Posts</h3>
         </div>
         <div class="post-gallery">
-          {% for post in site.posts limit:3 %}
-          <a href="{{post.url}}"
-            ><div class="post-card">
-              <h5>{{post.title}}</h5>
-              <p>{{post.excerpt}}</p>
-              <caption>
-                {{post.date | date_to_string}}
-              </caption>
-            </div>
-          </a>
-          <a href="{{post.url}}"
-            ><div class="post-card">
-              <h5>{{post.title}}</h5>
-              <p>{{post.excerpt}}</p>
-              <caption>
-                {{post.date | date_to_string}}
-              </caption>
-            </div>
-          </a>
+          {% for post in site.categories.posts limit:3 %}
           <a href="{{post.url}}"
             ><div class="post-card">
               <h5>{{post.title}}</h5>
@@ -76,38 +58,22 @@
           <h3>Projects</h3>
         </div>
         <div class="project-gallery">
-          {% for post in site.posts limit:3 %}
-          <a href="{{post.url}}"
+          {% for project in site.categories.projects limit:3 %}
+          <a href="{{project.url}}"
             ><div class="project-card">
-              <h5>{{post.title}}</h5>
-              <p>{{post.excerpt}}</p>
-              <caption>
-                {{post.date | date_to_string}}
-              </caption>
-            </div>
-          </a>
-          <a href="{{post.url}}"
-            ><div class="project-card">
-              <h5>{{post.title}}</h5>
+              <h5>{{project.title}}</h5>
+
+              {% if project.img %}
               <div class="project-card-body">
                 <img
-                  height="400"
-                  src="{{site.baseurl}}/assets/images/{{post.img}}"
+                  width="400"
+                  src="{{site.baseurl}}/assets/images/{{project.img}}"
                 />
-                <p>{{post.excerpt}}</p>
+                <p>{{project.excerpt}}</p>
               </div>
-              <caption>
-                {{post.date | date_to_string}}
-              </caption>
-            </div>
-          </a>
-          <a href="{{post.url}}"
-            ><div class="project-card">
-              <h5>{{post.title}}</h5>
-              <p>{{post.excerpt}}</p>
-              <caption>
-                {{post.date | date_to_string}}
-              </caption>
+              {% else %}
+              <p>{{project.excerpt}}</p>
+              {% endif %}
             </div>
           </a>
           {% endfor %}

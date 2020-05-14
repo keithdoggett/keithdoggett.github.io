@@ -1,3 +1,35 @@
+// global
+.content {
+  padding-top: 20px;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // responsive container size
+  @media screen and (max-width: $screen-sm) {
+    margin: 0% 5%;
+  }
+
+  @media screen and (max-width: $screen-md) and (min-width: $screen-sm) {
+    margin: 0% 5%;
+  }
+
+  @media screen and (max-width: $screen-lg) and (min-width: $screen-md) {
+    margin: 0% 10%;
+  }
+
+  @media screen and (max-width: $screen-xl) and (min-width: $screen-lg) {
+    margin: 0% 15%;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    margin: 0% 20%;
+  }
+}
+
 #nav {
   margin: 0;
   padding: 30px;
@@ -25,32 +57,62 @@
   .navbar-links {
     padding-right: 20px;
   }
+
+  // dropdown
+  div.dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    right: 0;
+    left: auto;
+    box-shadow: 0px 8px 16px 0px rbga(0, 0, 0, 0.2);
+  }
+
+  .dropdown-content a {
+    color: $stroke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: $background;
+
+    &.current {
+      color: lighten($primary, 5%);
+    }
+  }
+
+  .dropdown-content {
+    a:hover,
+    a:active {
+      background-color: darken($secondary, 5%);
+    }
+  }
+
+  .dropdown:hover,
+  .dropdown:active {
+    .dropdown-content {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    #links {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    #dropdown {
+      display: none;
+    }
+  }
 }
 
 #home {
-  padding-top: 20px;
-
-  // responsive container size
-  @media screen and (max-width: $screen-sm) {
-    margin: 0% 5%;
-  }
-
-  @media screen and (max-width: $screen-md) and (min-width: $screen-sm) {
-    margin: 0% 5%;
-  }
-
-  @media screen and (max-width: $screen-lg) and (min-width: $screen-md) {
-    margin: 0% 10%;
-  }
-
-  @media screen and (max-width: $screen-xl) and (min-width: $screen-lg) {
-    margin: 0% 15%;
-  }
-
-  @media screen and (min-width: $screen-xl) {
-    margin: 0% 20%;
-  }
-
   .intro-card {
     // margin: auto;
     // width: 50%;
@@ -112,7 +174,8 @@
       color: $stroke;
     }
 
-    &:hover {
+    &:hover,
+    &:active {
       background-color: rgba($secondary, 0.4);
     }
 
@@ -154,7 +217,8 @@
       color: $stroke;
     }
 
-    &:hover {
+    &:hover,
+    &:active {
       background-color: rgba($secondary, 0.4);
     }
 
