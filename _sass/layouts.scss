@@ -1,14 +1,6 @@
 // global
-.content {
-  padding-top: 20px;
-
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  // responsive container size
+// responsive container size
+body {
   @media screen and (max-width: $screen-sm) {
     margin: 0% 5%;
   }
@@ -30,10 +22,20 @@
   }
 }
 
+.content {
+  padding-top: 20px;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 #nav {
   margin: 0;
-  padding: 30px;
-  background-color: rgba($secondary, 0.4);
+  padding: 30px 0px;
+
   a {
     font-weight: bold;
     color: $link;
@@ -50,12 +52,12 @@
   }
 
   .navbar-logo {
-    padding-left: 20px;
+    // padding-left: 20px;
     display: inline-flex;
   }
 
   .navbar-links {
-    padding-right: 20px;
+    // padding-right: 20px;
   }
 
   // dropdown
