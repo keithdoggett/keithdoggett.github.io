@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-
-    <title>{{page.title}}</title>
+    {% include head.html %}
+    <title>
+      {%if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif
+      %}
+    </title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>

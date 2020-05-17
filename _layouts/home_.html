@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    {% include head.html %}
 
-    <title>{{page.title}}</title>
+    <title>
+      {%if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif
+      %}
+    </title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
@@ -39,7 +43,7 @@
           <h3>Recent Posts</h3>
         </div>
         <div class="post-gallery">
-          {% for post in site.categories.posts limit:3 %}
+          {% for post in site.posts limit:3 %}
           <a href="{{post.url}}"
             ><div class="post-card">
               <h5>{{post.title}}</h5>
@@ -60,7 +64,7 @@
           <h3>Projects</h3>
         </div>
         <div class="project-gallery">
-          {% for project in site.categories.projects limit:3 %}
+          {% for project in site.projects limit:3 %}
           <a href="{{project.url}}"
             ><div class="project-card">
               <h5>{{project.title}}</h5>

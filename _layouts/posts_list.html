@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    {% include head.html %}
 
     <title>{{page.title}}</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
@@ -12,7 +13,7 @@
     <div class="content">
       <div class="posts">
         <div class="post-gallery">
-          {% for post in site.categories.posts limit:3 %}
+          {% for post in site.posts limit:3 %}
           <a href="{{post.url}}"
             ><div class="post-card">
               <h5>{{post.title}}</h5>

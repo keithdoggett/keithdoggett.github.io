@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Spatial Stats"
+description: "Spatial Stats Ruby/Rails Gem project page. Overview of features, technical challenges, and future work."
 date: 2020-05-14 15:22:00 -0500
 categories: spatial projects
 img: projects/spatial_stats/pitt.png
