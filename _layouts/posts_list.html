@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    {% include navigation.html %}
+    <div class="content">
+      <div class="posts">
+        <div class="post-gallery">
+          {% for post in site.categories.posts limit:3 %}
+          <a href="{{post.url}}"
+            ><div class="post-card">
+              <h5>{{post.title}}</h5>
+              <p>{{post.excerpt}}</p>
+              <caption>
+                {{post.date | date_to_string}}
+              </caption>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

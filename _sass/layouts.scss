@@ -118,133 +118,133 @@ body {
   }
 }
 
-#home {
-  .intro-card {
-    // margin: auto;
-    // width: 50%;
-    padding: 10px;
-    background-color: $tertiary;
-    outline: $primary solid 2px;
-    text-align: center;
+// #home {
+.intro-card {
+  // margin: auto;
+  // width: 50%;
+  padding: 10px;
+  background-color: $tertiary;
+  outline: $primary solid 2px;
+  text-align: center;
 
-    p {
-      text-align: left;
-    }
-
-    @media screen and (min-width: $screen-md) {
-      outline: $primary solid 3px;
-    }
+  p {
+    text-align: left;
   }
 
-  .intro-image-container {
-    width: 45%;
-    overflow: hidden;
-
-    img {
-      border-radius: 3px;
-      width: 100%;
-      object-fit: contain;
-    }
-  }
-
-  .posts {
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .posts-title {
-    h3 {
-      // color: $secondary;
-    }
-  }
-
-  .post-gallery {
-    display: block;
-  }
-
-  .post-card {
-    margin-bottom: 3%;
-
-    padding: 10px;
-    background-color: $tertiary;
-    outline: $primary solid 2px;
-    text-align: center;
-
-    h4,
-    h5 {
-      color: $stroke;
-    }
-
-    p {
-      text-align: left;
-      color: $stroke;
-    }
-
-    &:hover,
-    &:active {
-      background-color: rgba($secondary, 0.4);
-    }
-
-    @media screen and (min-width: $screen-md) {
-      outline: $primary solid 3px;
-    }
-  }
-
-  // projects
-  .projects {
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .projects-title {
-    h3 {
-      // color: $secondary;
-    }
-  }
-
-  .project-gallery {
-    display: block;
-  }
-
-  .project-card {
-    margin-bottom: 3%;
-    padding: 10px;
-    background-color: $tertiary;
-    outline: $primary solid 2px;
-    text-align: center;
-
-    h4,
-    h5 {
-      color: $stroke;
-    }
-
-    p {
-      text-align: left;
-      color: $stroke;
-    }
-
-    &:hover,
-    &:active {
-      background-color: rgba($secondary, 0.4);
-    }
-
-    @media screen and (min-width: $screen-md) {
-      outline: $primary solid 3px;
-    }
-  }
-
-  .project-card-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    p {
-      padding: 0px 10px;
-      text-align: justify;
-    }
-
-    @media screen and (max-width: $screen-sm) {
-      display: block;
-    }
+  @media screen and (min-width: $screen-md) {
+    outline: $primary solid 3px;
   }
 }
+
+.intro-image-container {
+  width: 45%;
+  overflow: hidden;
+
+  img {
+    border-radius: 3px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.posts {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.posts-title {
+  h3 {
+    // color: $secondary;
+  }
+}
+
+.post-gallery {
+  display: block;
+}
+
+.post-card {
+  margin-bottom: 3%;
+
+  padding: 10px;
+  background-color: $tertiary;
+  outline: $primary solid 2px;
+  text-align: center;
+
+  h4,
+  h5 {
+    color: $stroke;
+  }
+
+  p {
+    text-align: left;
+    color: $stroke;
+  }
+
+  &:hover,
+  &:active {
+    background-color: rgba($secondary, 0.4);
+  }
+
+  @media screen and (min-width: $screen-md) {
+    outline: $primary solid 3px;
+  }
+}
+
+// projects
+.projects {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.projects-title {
+  h3 {
+    // color: $secondary;
+  }
+}
+
+.project-gallery {
+  display: block;
+}
+
+.project-card {
+  margin-bottom: 3%;
+  padding: 10px;
+  background-color: $tertiary;
+  outline: $primary solid 2px;
+  text-align: center;
+
+  h4,
+  h5 {
+    color: $stroke;
+  }
+
+  p {
+    text-align: left;
+    color: $stroke;
+  }
+
+  &:hover,
+  &:active {
+    background-color: rgba($secondary, 0.4);
+  }
+
+  @media screen and (min-width: $screen-md) {
+    outline: $primary solid 3px;
+  }
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  p {
+    padding: 0px 10px;
+    text-align: justify;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    display: block;
+  }
+}
+// }

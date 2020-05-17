@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    {% include navigation.html %}
+    <div class="content">
+      <div class="projects">
+        <div class="project-gallery">
+          {% for project in site.categories.projects limit:3 %}
+          <a href="{{project.url}}"
+            ><div class="project-card">
+              <h5>{{project.title}}</h5>
+
+              {% if project.img %}
+              <div class="project-card-body">
+                <img
+                  width="400"
+                  src="{{site.baseurl}}/assets/images/{{project.img}}"
+                />
+                <p>{{project.excerpt}}</p>
+              </div>
+              {% else %}
+              <p>{{project.excerpt}}</p>
+              {% endif %}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
