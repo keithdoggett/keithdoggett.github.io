@@ -77,7 +77,7 @@ I'm happy that the project has come together nicely so far, but there is definit
   * Break queries into a seperate `spatial_stats-activerecord` gem that will contain the queries to interface with PostGIS. Will remove core dependency on `Rails`.
 5. General
   * Add point pattern analysis module
-
+  * Add regression module
 
 ### Footnotes
 
