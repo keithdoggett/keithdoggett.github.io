@@ -69,7 +69,7 @@ I'm happy that the project has come together nicely so far, but there is definit
 2. Local Measurements
   * `Join Count`
 3. Utilities
-  * Add support for .gal file imports
+  * Add support for .gal/.swm file imports
   * Add support for Rate variables
   * Add support for Bayes smoothing
   * Add an additional gem `spatial_stats-geojson` that will depend on `RGeo`, but can produce weights matrices from geojson inputs.
@@ -81,6 +81,6 @@ I'm happy that the project has come together nicely so far, but there is definit
 
 ### Footnotes
 
-[^1]: In actuality, these weren't enormous roadblocks that nearly made me scrap the project, but they were the issues I spent around 80% of my time dealing with, so I figure they're worth documenting.
+[^1]: In reality, these weren't enormous roadblocks that nearly made me scrap the project, but they were the issues I spent around 80% of my time dealing with, so I figure they're worth documenting.
 
 [^2]: In my checkerboard setup, this is the probability that if an observation's neighbors are sampled without replacement, they are all the opposite value of itself.
