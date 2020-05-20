@@ -47,13 +47,18 @@ body {
   }
 
   .navbar {
-    display: flex;
+    display: inline-flex;
+    // display: inline;
     justify-content: space-between;
+    width: 100%;
   }
 
   .navbar-logo {
     // padding-left: 20px;
     display: inline-flex;
+    // right: 0;
+    width: 10%;
+    height: 50px;
   }
 
   // dropdown
@@ -118,10 +123,7 @@ body {
   }
 }
 
-// #home {
 .intro-card {
-  // margin: auto;
-  // width: 50%;
   padding: 10px;
   background-color: $tertiary;
   outline: $primary solid 2px;
@@ -150,12 +152,6 @@ body {
 .posts {
   padding-top: 20px;
   text-align: center;
-}
-
-.posts-title {
-  h3 {
-    // color: $secondary;
-  }
 }
 
 .post-gallery {
@@ -247,70 +243,26 @@ body {
     display: block;
   }
 }
-// }
 
 // Footer Share Box
 .share {
   padding-top: 20px;
+
+  a {
+    display: inline-block;
+    padding: 20px;
+  }
 }
 
-.share a {
-  display: inline-block;
-  padding: 20px;
+// about page
+#about {
+  .links {
+    display: flex;
+    a {
+      padding: 20px;
+    }
+    img {
+      height: 30px;
+    }
+  }
 }
-
-// .share-box a {
-//   display: inline-block;
-//   -webkit-box-shadow: 0 0 1px #777;
-//   box-shadow: 0 0 1px #777;
-//   padding: 5px 12px;
-//   margin-right: 5px;
-//   margin-bottom: 5px;
-//   text-decoration: none;
-// }
-// .share-box a:hover {
-//   text-decoration: none;
-//   -webkit-transition: background-color 200ms linear;
-//   -ms-transition: background-color 200ms linear;
-//   transition: background-color 200ms linear;
-// }
-
-// .fb-share {
-//   color: #3b5998;
-// }
-// .fb-share:hover {
-//   color: #fff;
-//   background-color: #3b5998;
-// }
-
-// .twitter-share {
-//   color: #4099ff;
-// }
-// .twitter-share:hover {
-//   color: #fff;
-//   background-color: #4099ff;
-// }
-
-// .reddit-share {
-//   color: #ff5700;
-// }
-// .reddit-share:hover {
-//   color: #fff;
-//   background-color: #ff5700;
-// }
-
-// .linkedin-share {
-//   color: #0077b5;
-// }
-// .linkedin-share:hover {
-//   color: #fff;
-//   background-color: #0077b5;
-// }
-
-// .email-share {
-//   color: #444444;
-// }
-// .email-share:hover {
-//   color: #fff;
-//   background-color: #444444;
-// }
