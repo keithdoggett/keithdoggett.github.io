@@ -2,7 +2,7 @@
     <div class="navbar">
         <div class="navbar-logo">
           <!-- <h5>K.D.</h5>  -->
-          <img src="/assets/images/triangle.svg"/>
+          <img src="/assets/images/triangle.svg" alt="logo"/>
           <h4>KD</h4> 
         </div>
         <div class="navbar-links" id="links">
@@ -13,7 +13,7 @@
             {% endfor %}
         </div>
         <div class="dropdown" id="dropdown">
-            <a href="#"><img src="/assets/images/burger_menu.svg"></a>
+            <a href="#"><img src="/assets/images/burger_menu.svg" alt="burger_menu"></a>
             <div class="dropdown-content">
                 {% for item in site.data.navigation %}
                     <a href="{{ site.url }}{{ site.baseurl }}{{ item.link }}"{% if page.url == item.link %}class="current"{% endif %}>
