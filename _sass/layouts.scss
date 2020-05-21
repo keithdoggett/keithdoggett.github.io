@@ -259,8 +259,8 @@ body {
 // about page
 #about {
   .links {
-    display: flex;
     a {
+      display: inline-block;
       padding: 20px;
     }
     img {
