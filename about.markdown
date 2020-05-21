@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /about/
 ---
-If you have something to say about what I'm doing, feel free to reach out!
+If you have something to say about what I'm doing, feel free to reach out via email or LinkedIn with the links below!
 
 
 <div class="links">
@@ -15,5 +15,9 @@ If you have something to say about what I'm doing, feel free to reach out!
     </a>
     <a href="{{site.url}}/feed.xml">
         <img src="/assets/images/rss.svg">
+    </a>
+    <a href="mailto:kfdoggett@gmail.com">
+        <img src="/assets/images/email.svg">
+        <p>kfdoggett@gmail.com</p>
     </a>
 </div>
