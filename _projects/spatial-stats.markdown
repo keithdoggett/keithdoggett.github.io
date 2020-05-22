@@ -37,7 +37,7 @@ While it is not fully featured, the [package](https://www.github.com/keithdogget
   * `standardize` method on enumerable classes
   * `row_standardize` and `window` methods on `Numo::NArray`
 
-### Technical Challenges
+<!-- ### Technical Challenges
 Two major challenges[^1] arose during the initial development of `spatial_stats`. The first is a lack of consistency among different GIS programs/packages, the second is the lack of a complete scientific computing library in Ruby.
 
 #### Lack of Consistency
@@ -57,7 +57,7 @@ The first issue I ran into came while implementing permutation testing. `Numo::N
 
 The second, bigger issue, is that there is not a well supported sparse matrix implementation in the Numo or SciRuby libraries. To solve this, I created a C Extension within the project that implements a slimmed down CSR Matrix. I'm actually happy that this happened because it was a great experience to learn how to work with C Extensions in Ruby, but it still posed a technical obstacle to overcome.
 
-Ultimately, these issues did not prevent the library from being built, but they did increase development time. Further, they provided some insight into what pieces are lacking in the Numo and SciRuby packages. When I have more free time I might see if there's a way I can try to resolve some of these and make some contributions to those projects.
+Ultimately, these issues did not prevent the library from being built, but they did increase development time. Further, they provided some insight into what pieces are lacking in the Numo and SciRuby packages. When I have more free time I might see if there's a way I can try to resolve some of these and make some contributions to those projects. -->
 
 ### Path Forward
 
@@ -79,8 +79,8 @@ I'm happy that the project has come together nicely so far, but there is definit
   * Add point pattern analysis module
   * Add regression module
 
-### Footnotes
+<!-- ### Footnotes
 
 [^1]: In reality, these weren't enormous roadblocks that nearly made me scrap the project, but they were the issues I spent around 80% of my time dealing with, so I figure they're worth documenting.
 
-[^2]: In my checkerboard setup, this is the probability that if an observation's neighbors are sampled without replacement, they are all the opposite value of itself.
+[^2]: In my checkerboard setup, this is the probability that if an observation's neighbors are sampled without replacement, they are all the opposite value of itself. -->
