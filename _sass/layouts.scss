@@ -127,7 +127,7 @@ body {
 
 .intro-card {
   padding: 10px;
-  background-color: $tertiary;
+  background-color: $background;
   outline: $primary solid 2px;
   text-align: center;
 
@@ -164,7 +164,7 @@ body {
   margin-bottom: 3%;
 
   padding: 10px;
-  background-color: $tertiary;
+  background-color: $card-background;
   outline: $primary solid 2px;
   text-align: center;
 
@@ -207,7 +207,7 @@ body {
 .project-card {
   margin-bottom: 3%;
   padding: 10px;
-  background-color: $tertiary;
+  background-color: $card-background;
   outline: $primary solid 2px;
   text-align: center;
 

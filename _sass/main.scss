@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
 
 $primary: #078080;
 $secondary: #f45d48;
-$background: #f8f5f2;
-// $background: #eff0f3;
+$background: #fffffe;
+$card-background: #f8f5f2;
+// $background: #4d4d6b;
 
 $tertiary: #fffffe;
 $headline: #232323;
@@ -40,9 +41,9 @@ figure {
 
 /** Basic styling */
 body {
-  font: 400 16px/1.5 "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font: 400 16px/1.5 "Metrophobic", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   color: $stroke;
   background-color: $background;
   -webkit-text-size-adjust: 100%;
